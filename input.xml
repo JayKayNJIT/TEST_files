@@ -1,0 +1,39 @@
+<input>
+
+   <title>MoS2-SCF</title>
+
+   <structure speciespath="/opt/site/apps/exciting/smp/20210707/exciting/species" cartesian="true">
+      <crystal>
+         <basevect>  3.1916279793  0.0  0.0 </basevect>
+         <basevect>  0.0  5.5260000229  0.0 </basevect>
+         <basevect>  0.0  0.0  12.0 </basevect>
+      </crystal>
+      <species speciesfile="Mo.xml" rmt="1.0">
+             <atom coord="1.5952186457 2.7630000115 6.0"  />
+             <atom coord="0.0 0.0 6.0"  />
+      </species>
+      <species speciesfile="S.xml" rmt="1.0">
+      <atom coord="1.5952186457 0.9210000333 7.5672" />
+      <atom coord="1.5952186457 0.9210000333 4.4328" />
+      <atom coord="0.0 3.6840001276 7.5672" />
+      <atom coord="0.0 3.6840001276 4.4328" />
+      </species>
+   </structure>
+
+   <groundstate
+      maxscl="3"
+      rgkmax="5.0"
+      ngridk="1 1 1"
+      xctype="EXX"
+      vkloff="0.5 0.5 0.5"
+      epsband="1.0d-1"
+      epsengy="1.0d-1"
+      epsforcescf="1.0d-1"
+      nempty="10">
+
+   </groundstate>
+
+   <relax
+      taubfgs="0.3" />
+
+</input>
